@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3 (Python 3.12.1 on linux)" generated="2025-06-12T07:30:12.940041" rpa="false" schemaversion="5">
+<suite id="s1" name="Rquirements" source="/workspaces/Vor/rquirements.robot">
+<test id="s1-t1" name="Playwright: Open a browser in headless mode" line="5">
+<kw name="New Browser" owner="RPA.Browser.Playwright">
+<msg time="2025-06-12T07:30:13.434567" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/workspaces/Vor/browser/traces/temp/afe53332-7525-413a-8f99-880dd6becd51"}</msg>
+<msg time="2025-06-12T07:30:13.440745" level="INFO">Starting Browser process /home/codespace/.python/current/lib/python3.12/site-packages/Browser/wrapper/index.js using at 127.0.0.1:43691</msg>
+<msg time="2025-06-12T07:30:14.046121" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/workspaces/Vor/browser/traces/temp/afe53332-7525-413a-8f99-880dd6becd51"}</msg>
+<arg>headless=True</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-06-12T07:30:13.432894" elapsed="0.613784"/>
+</kw>
+<kw name="New Page" owner="RPA.Browser.Playwright">
+<msg time="2025-06-12T07:30:14.606208" level="INFO">Successfully initialized new page object and opened url: https://www.google.com/?hl=de&amp;gl=de</msg>
+<msg time="2025-06-12T07:30:14.606603" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://www.google.com/?hl=de&amp;gl=de</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-06-12T07:30:14.047223" elapsed="0.559771"/>
+</kw>
+<kw name="Take Screenshot" owner="RPA.Browser.Playwright">
+<msg time="2025-06-12T07:30:14.831093" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/screenshot.png" target="_blank"&gt;&lt;img src="browser/screenshot/screenshot.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<arg>screenshot</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-06-12T07:30:14.610651" elapsed="0.220937"/>
+</kw>
+<kw name="Click" owner="RPA.Browser.Playwright">
+<msg time="2025-06-12T07:30:14.835227" level="INFO">Clicks the element '//button[.='Alle ablehnen']'.</msg>
+<arg>//button[.='Alle ablehnen']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-12T07:30:14.832666" elapsed="0.096521"/>
+</kw>
+<kw name="Take Screenshot" owner="RPA.Browser.Playwright">
+<msg time="2025-06-12T07:30:15.019075" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/screenshot2.png" target="_blank"&gt;&lt;img src="browser/screenshot/screenshot2.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<arg>screenshot2</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-06-12T07:30:14.930097" elapsed="0.089605"/>
+</kw>
+<msg time="2025-06-12T07:30:15.040235" level="INFO">Switching context to context=0d4eecdd-6223-4ea7-b4ea-6e7399a725df in CURRENT</msg>
+<msg time="2025-06-12T07:30:15.050532" level="INFO">Successfully changed active context: context=0d4eecdd-6223-4ea7-b4ea-6e7399a725df</msg>
+<msg time="2025-06-12T07:30:15.070313" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-06-12T07:30:13.431097" elapsed="1.590584"/>
+</test>
+<status status="PASS" start="2025-06-12T07:30:12.942740" elapsed="2.130390"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Rquirements" id="s1" pass="1" fail="0" skip="0">Rquirements</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
