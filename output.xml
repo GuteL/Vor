@@ -1,54 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3 (Python 3.12.1 on linux)" generated="2025-06-12T07:30:12.940041" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3 (Python 3.12.1 on linux)" generated="2025-06-12T12:33:31.573841" rpa="false" schemaversion="5">
 <suite id="s1" name="Rquirements" source="/workspaces/Vor/rquirements.robot">
-<test id="s1-t1" name="Playwright: Open a browser in headless mode" line="5">
+<test id="s1-t1" name="Playwright: Open a browser in headless mode" line="6">
 <kw name="New Browser" owner="RPA.Browser.Playwright">
-<msg time="2025-06-12T07:30:13.434567" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/workspaces/Vor/browser/traces/temp/afe53332-7525-413a-8f99-880dd6becd51"}</msg>
-<msg time="2025-06-12T07:30:13.440745" level="INFO">Starting Browser process /home/codespace/.python/current/lib/python3.12/site-packages/Browser/wrapper/index.js using at 127.0.0.1:43691</msg>
-<msg time="2025-06-12T07:30:14.046121" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/workspaces/Vor/browser/traces/temp/afe53332-7525-413a-8f99-880dd6becd51"}</msg>
+<msg time="2025-06-12T12:33:32.152850" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/workspaces/Vor/browser/traces/temp/144df126-fe04-48d2-a789-9a8e03781b0b"}</msg>
+<msg time="2025-06-12T12:33:32.159843" level="INFO">Starting Browser process /home/codespace/.python/current/lib/python3.12/site-packages/Browser/wrapper/index.js using at 127.0.0.1:50319</msg>
+<msg time="2025-06-12T12:33:32.767340" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/workspaces/Vor/browser/traces/temp/144df126-fe04-48d2-a789-9a8e03781b0b"}</msg>
 <arg>headless=True</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-06-12T07:30:13.432894" elapsed="0.613784"/>
+<status status="PASS" start="2025-06-12T12:33:32.151126" elapsed="0.616881"/>
 </kw>
 <kw name="New Page" owner="RPA.Browser.Playwright">
-<msg time="2025-06-12T07:30:14.606208" level="INFO">Successfully initialized new page object and opened url: https://www.google.com/?hl=de&amp;gl=de</msg>
-<msg time="2025-06-12T07:30:14.606603" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2025-06-12T12:33:33.509648" level="INFO">Successfully initialized new page object and opened url: https://www.google.com/?hl=de&amp;gl=de</msg>
+<msg time="2025-06-12T12:33:33.510020" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>https://www.google.com/?hl=de&amp;gl=de</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-06-12T07:30:14.047223" elapsed="0.559771"/>
+<status status="PASS" start="2025-06-12T12:33:32.771573" elapsed="0.740222"/>
 </kw>
 <kw name="Take Screenshot" owner="RPA.Browser.Playwright">
-<msg time="2025-06-12T07:30:14.831093" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/screenshot.png" target="_blank"&gt;&lt;img src="browser/screenshot/screenshot.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-12T12:33:33.615855" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/screenshot.png" target="_blank"&gt;&lt;img src="browser/screenshot/screenshot.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <arg>screenshot</arg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2025-06-12T07:30:14.610651" elapsed="0.220937"/>
+<status status="PASS" start="2025-06-12T12:33:33.512529" elapsed="0.103657"/>
 </kw>
 <kw name="Click" owner="RPA.Browser.Playwright">
-<msg time="2025-06-12T07:30:14.835227" level="INFO">Clicks the element '//button[.='Alle ablehnen']'.</msg>
+<msg time="2025-06-12T12:33:33.617148" level="INFO">Clicks the element '//button[.='Alle ablehnen']'.</msg>
 <arg>//button[.='Alle ablehnen']</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-06-12T07:30:14.832666" elapsed="0.096521"/>
+<status status="PASS" start="2025-06-12T12:33:33.616558" elapsed="0.065352"/>
 </kw>
 <kw name="Take Screenshot" owner="RPA.Browser.Playwright">
-<msg time="2025-06-12T07:30:15.019075" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/screenshot2.png" target="_blank"&gt;&lt;img src="browser/screenshot/screenshot2.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-12T12:33:33.771264" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/screenshot2.png" target="_blank"&gt;&lt;img src="browser/screenshot/screenshot2.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <arg>screenshot2</arg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2025-06-12T07:30:14.930097" elapsed="0.089605"/>
+<status status="PASS" start="2025-06-12T12:33:33.683125" elapsed="0.088629"/>
 </kw>
-<msg time="2025-06-12T07:30:15.040235" level="INFO">Switching context to context=0d4eecdd-6223-4ea7-b4ea-6e7399a725df in CURRENT</msg>
-<msg time="2025-06-12T07:30:15.050532" level="INFO">Successfully changed active context: context=0d4eecdd-6223-4ea7-b4ea-6e7399a725df</msg>
-<msg time="2025-06-12T07:30:15.070313" level="INFO">Successfully closed Context</msg>
-<status status="PASS" start="2025-06-12T07:30:13.431097" elapsed="1.590584"/>
+<kw name="Type Text" owner="RPA.Browser.Playwright">
+<msg time="2025-06-12T12:33:33.774194" level="INFO">Types the text 'Wikipedia' in the given field.</msg>
+<arg>id=APjFqb</arg>
+<arg>Wikipedia</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-12T12:33:33.772956" elapsed="0.185854"/>
+</kw>
+<kw name="Click" owner="RPA.Browser.Playwright">
+<msg time="2025-06-12T12:33:33.961189" level="INFO">Clicks the element '(//input[@class='gNO89b' and @name='btnK'])[1]'.</msg>
+<arg>(//input[@class='gNO89b' and @name='btnK'])[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-12T12:33:33.959687" elapsed="0.145554"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-12T12:33:36.106380" level="INFO">Slept 2 seconds.</msg>
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-12T12:33:34.105740" elapsed="2.001045"/>
+</kw>
+<kw name="Take Screenshot" owner="RPA.Browser.Playwright">
+<msg time="2025-06-12T12:33:36.224328" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/screenshot3.png" target="_blank"&gt;&lt;img src="browser/screenshot/screenshot3.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<arg>screenshot3</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-06-12T12:33:36.107550" elapsed="0.117298"/>
+</kw>
+<msg time="2025-06-12T12:33:36.243505" level="INFO">Switching context to context=7bcedd8f-c1b4-454e-a1aa-9483b0a03a3e in CURRENT</msg>
+<msg time="2025-06-12T12:33:36.294874" level="INFO">Successfully changed active context: context=7bcedd8f-c1b4-454e-a1aa-9483b0a03a3e</msg>
+<msg time="2025-06-12T12:33:36.312941" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-06-12T12:33:32.147356" elapsed="4.079062"/>
 </test>
-<status status="PASS" start="2025-06-12T07:30:12.942740" elapsed="2.130390"/>
+<status status="PASS" start="2025-06-12T12:33:31.576581" elapsed="4.738912"/>
 </suite>
 <statistics>
 <total>

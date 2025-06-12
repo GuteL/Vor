@@ -1,5 +1,6 @@
 *** Settings ***
 Library    RPA.Browser.Playwright
+Library    RPA.Browser.Selenium
 
 *** Test Cases ***
 Playwright: Open a browser in headless mode
@@ -8,4 +9,7 @@ Playwright: Open a browser in headless mode
     Take Screenshot    screenshot
     Click    //button[.='Alle ablehnen']   
     Take Screenshot    screenshot2
-    Click    
+    Type Text    id=APjFqb    Wikipedia
+    Click    (//input[@class='gNO89b' and @name='btnK'])[1]
+    Sleep    2 seconds
+    Take Screenshot    screenshot3    
